@@ -4,6 +4,7 @@ import Image from 'next/image';
 import X from './X';
 const Loc = () => {
     return (
+        <div>
     <div className='  md:space-y-4 py-8  px-4 flex md:flex-col  justify-center items-center'>
           
    
@@ -25,7 +26,7 @@ const Loc = () => {
     
     </div>
 
-
+    </div>
     )
 }
 export default Loc;

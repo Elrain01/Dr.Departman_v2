@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Slider from '@/components/slider';
+import X from '@/components/X';
 
 const Hero = () => {
   return (

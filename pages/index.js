@@ -1,17 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Loc from '@/components/Loc'
-import Gigo from '@/components/Gigo'
-import Drnav from '@/components/Drnav'
-import Last from '@/components/Last'
-import Poshtibani from '@/components/Poshtibani'
+import dynamic from 'next/dynamic'
 
+
+const Test = dynamic(() => import('/components/Test'))
+const Poshtibani = dynamic(() => import('/components/Poshtibani'))
+const Last = dynamic(() => import('/components/Last'))
+const Drnav = dynamic(() => import('/components/Test'))
+const Gigo = dynamic(() => import('/components/Gigo'))
+const Loc = dynamic(() => import('/components/Loc'))
+const Hero = dynamic(() => import('/components/Hero'))
+const Header = dynamic(() => import('/components/Header'))
 // hfhfhjhfjjf
+
 export default function Home() {
   return (
-   <div>
+   <div className='h-full'>
    
    <Header/>
    <Hero/>
@@ -22,7 +26,7 @@ export default function Home() {
    <div className='  relative bottom-0 right-0 z-20  w-full'>
    <Poshtibani/>
    </div>
-   
+   <Test/>
    
    
    
