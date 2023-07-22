@@ -4,24 +4,25 @@ import { BiMenuAltRight } from 'react-icons/bi';
 
 const Header = () => {
   return (
+<div>    
   <div className='fixed top-0 left-0 w-full '>
 
     <div className='flex justify-between h-14
           bg-[#0e113452] w-full items-center px-[2%]'>
             
         <div className='flex space-x-2 items-center'>
-            <Image className='w-10 object-contain ' width='100' height='100' 
+            <Image className='w-10 object-contain ' width='100' height='100'  alt='online ceo'
             src='/images/logo.png'/>
             <p className='text-xl font-bold text-gray-300'>Dr.Departman</p>
         </div>
 
         <div>
-          <BiMenuAltRight className='text-4xl  text-gray-300'/>
+        <button> <BiMenuAltRight className='text-4xl  text-gray-300'/></button>
         </div>
 
     </div>
   </div>
-   
+</div>   
    
    
    

@@ -3,15 +3,14 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
 
-const Test = dynamic(() => import('/components/Test'))
-const Poshtibani = dynamic(() => import('/components/Poshtibani'))
-const Last = dynamic(() => import('/components/Last'))
-const Drnav = dynamic(() => import('/components/Test'))
-const Gigo = dynamic(() => import('/components/Gigo'))
-const Loc = dynamic(() => import('/components/Loc'))
-const Hero = dynamic(() => import('/components/Hero'))
-const Header = dynamic(() => import('/components/Header'))
-// hfhfhjhfjjf
+
+
+const Header = dynamic(() => import('../components/page1/Header'))
+const Hero = dynamic(() => import('../components/page1/Hero'))
+const Location = dynamic(() => import('../components/page1/Location'))
+const Drnav = dynamic(() => import('../components/page1/Drnav'))
+const Lastlogo = dynamic(() => import('../components/page1/Lastlogo'))
+const Poshtibani = dynamic(() => import('../components/page1/Poshtibani'))
 
 export default function Home() {
   return (
@@ -19,14 +18,14 @@ export default function Home() {
    
    <Header/>
    <Hero/>
-   <Loc/>
-   <Gigo/>
+   <Location/>
    <Drnav/>
-   <Last/>
+   <Lastlogo/>
    <div className='  relative bottom-0 right-0 z-20  w-full'>
    <Poshtibani/>
    </div>
-   <Test/>
+
+ 
    
    
    
